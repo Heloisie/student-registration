@@ -1,0 +1,110 @@
+@import "../Styles/reset.css";
+@import "../Styles/variables.css";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+body {
+    background-color: var(--clr-accent-100);
+    font-family: var(--ff-primary);
+    justify-content: center;
+}
+
+table{
+    background-color: var(--clr-neutral-900);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-spacing: 0;
+    margin-bottom: var(--size-900);
+}
+
+a:hover{
+    cursor: pointer;
+    text-decoration: underline;  
+}
+
+nav{
+    background-color: var(--clr-accent-500);
+    height: 25%;
+}
+
+th{
+    background-color: var(--clr-accent-500);
+    color: white;
+    padding: var(--size-500);
+}
+
+td{
+    padding: var(--size-500);
+}
+
+tr{
+    border-bottom: 1px solid black;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    background-color:var(--clr-accent-500);
+    border-radius:var(--size-400);
+    width:var(--size-900);
+    height:var(--size-600);
+    color: var(--clr-neutral-900);
+    border:none;
+    margin-top: var(--size-300);
+    align-self: center;
+    justify-self: center;
+}
+
+.nav{
+    background-color: var( --clr-accent-300);
+    width: auto;
+    height: var(--size-800);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: var(--size-600);
+}
+
+
+.main{
+    width: 50%;
+    background-color: var(--clr-neutral-900);
+    padding: var(--size-600);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin: var(--size-400) auto var(--size-400) auto;
+
+}
+
+input[type=text]{
+    width: 100%;
+    height: var(--size-600);
+    border-radius:var(--size-100);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+h1{
+    font-size: var(--fs-700);
+    font-weight: bolder;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}

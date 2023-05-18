@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../Scripts/index.js" defer></script>
+    <link rel="stylesheet" href="../Styles/style.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <a href="../Pages/cadastro.html">Ir para tabela</a>
+    </nav>
+    <main class="main">
+        <section class="center">
+            <h1>Cadastro</h1>
+            <form action="../Server/saveStudent.php" method="post" id="form">
+                <label>Nome</label>
+                <input type="text" name="name" required>
+                <label>RA</label>
+                <input type="text" name="ra" required>
+                <label>Sexo</label>
+                <div class="row">
+                    <input type="radio" name="sex" value="Homem" required>
+                    <label>Homem</label>
+                </div>
+                <div class="row">
+                    <input type="radio" name="sex" value="Mulher" required>
+                    <label>Mulher</label>
+                </div>
+                <div class="row">
+                    <input type="radio" name="sex" value="Outro" required>
+                    <label>Outro</label>
+                </div>
+                <label>Idade</label>
+                <input type="text" name="age" required>
+                <label>Endereço</label>
+                <input type="text" name="address" required>
+                <label>Telefone</label>
+                <input type="text" name="tel" required>
+                <label>E-mail</label>
+                <input type="text" name="email" required>
+                <input type="submit" class="button">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
